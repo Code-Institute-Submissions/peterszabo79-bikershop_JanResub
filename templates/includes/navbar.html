@@ -38,11 +38,10 @@
                     <i class="fa fa-bars"></i> All category 
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#"> Parts </a>
-                    <a class="dropdown-item" href="#">ridin jacket</a>
-                    <a class="dropdown-item" href="#">jacket</a>
-                    <a class="dropdown-item" href="#"> used parts </a>
-                    <a class="dropdown-item" href="#">tshirts </a>
+                    <a class="dropdown-item" href="{% url 'store' %}">All products </a>
+                    {% for category in links %}
+                    <a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }} </a>
+                    {% endfor %}
                 </div>
             </div>  <!-- category-wrap.// -->
         </div> <!-- col.// -->
@@ -82,4 +81,4 @@
     
     
     
-    </header> <!-- section-header.// -->
+</header> <!-- section-header.// -->
