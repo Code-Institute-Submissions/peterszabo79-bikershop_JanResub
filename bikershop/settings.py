@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-$5trf#q&t%^x7$2e$8sx6$@z52puw26kr84ldhl*(&-i@=+fut
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -82,12 +83,21 @@ AUTH_USER_MODEL = 'accounts.Account'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+
+#DATABASES = {
+#    'default': dj_database_url.parse('postgres://fdhfpunykgkrfy:ffbca0760e1220b430db866a6b3b852998a4e8eef318aba3108bddbc97fc620a@ec2-52-30-159-47.eu-west-1.compute.amazonaws.com:5432/dcliv2ousjjtel')
+#}
 
 
 # Password validation
