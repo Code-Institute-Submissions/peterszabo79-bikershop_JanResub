@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
 # DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost', 'bikershop-env.eba-mdqyupyq.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
