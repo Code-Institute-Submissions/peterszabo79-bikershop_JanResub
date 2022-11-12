@@ -14,6 +14,11 @@ from pathlib import Path
 import dj_database_url
 from decouple import config
 
+import cloudinary
+import cloudinary_storage
+import cloudinary.uploader
+import cloudinary.api
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +33,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
 # DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost', 'bikershop-env.eba-mdqyupyq.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -46,7 +51,8 @@ INSTALLED_APPS = [
     'carts',
     'orders',
     'admin_honeypot',
-    'cloudinary'
+    'cloudinary',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -92,21 +98,21 @@ AUTH_USER_MODEL = 'accounts.Account'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#if 'DATABASE_URL' in os.environ:
-##########   DATABASES = {
-#########        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
- ########   }
-#####else:
-######    DATABASES = {
- ####       'default': {
-  ###          'ENGINE': 'django.db.backends.sqlite3',
-  ##          'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
- #       }
-#   }
+if 'DATABASE_URL' in os.environ:
+   DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+  }
+else:
+    DATABASES = {
+       'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       }
+   }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://fdhfpunykgkrfy:ffbca0760e1220b430db866a6b3b852998a4e8eef318aba3108bddbc97fc620a@ec2-52-30-159-47.eu-west-1.compute.amazonaws.com:5432/dcliv2ousjjtel')
-}    
+####DATABASES = {
+    ###'default': dj_database_url.parse('postgres://fdhfpunykgkrfy:ffbca0760e1220b430db866a6b3b852998a4e8eef318aba3108bddbc97fc620a@ec2-52-30-159-47.eu-west-1.compute.amazonaws.com:5432/dcliv2ousjjtel')
+#}    
 
 
 # Password validation
@@ -151,7 +157,7 @@ STATICFILES_DIRS = [
     'bikershop/static',
 ]
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/peterszabo79/'
 MEDIA_ROOT = BASE_DIR /'media'
 
 
@@ -174,3 +180,18 @@ EMAIL_PORT = config('EMAIL_PORT', cast=int)
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+
+CLOUDINARY_STORAGE = {
+  'CLOUD_NAME' : 'peterszabo79', 
+  'API_KEY' : '184378976163428', 
+  'API_SECRET' : 'BY_XOmOuuwUijdXNfH9d3iqEtqI',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+#####cloudinary.config( 
+####  cloud_name = "peterszabo79", 
+###  api_key = "184378976163428", 
+##  api_secret = "BY_XOmOuuwUijdXNfH9d3iqEtqI",
+#)
