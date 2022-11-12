@@ -1,1 +1,1 @@
-web: bikershop.wsgi:application
+web: bikershopbypsz.wsgi:application
