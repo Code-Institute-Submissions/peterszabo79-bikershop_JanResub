@@ -1,108 +1,205 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BikerShop
+![](list/images/amiresponsive.jpeg)
 
-Welcome peterszabo79,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### The live website can be seen [here](https://bikershopbypsz.herokuapp.com/login)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# UX
+## Strategy 
+### Agile
+The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board which can be seen here -  <a href="https://github.com/users/peterszabo79/projects/9/views/1" target="_blank"> BikerShop </a>
 
-## Gitpod Reminders
+Through the use of the Kanban board in the projects view in Github, the project was divived into a few different sections:
+* Backlog
+* Current Iteration
+* In Progress
+* Done
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Kanban board github](list/images/kanban.jpeg)
+![Kanban board github](list/images/milestones.jpeg)
+* Projects were used to create the project.
+* Issues were used to create User Stories with a custom template. Eash user story is clearly described with a title, statement, acceptance criteria and tasks.
+* As work on a user story was begun the story was moved from the 'to do' column of the board to the 'In progress' column. When work on the story was complete the user story was moved into the 'done' column.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+### Project Goal
+#### The goal of the project is to create a E-commerce website . 
+* who wants to store, edit and delete their own items in one shopping list.
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories 
+   * As a Site User I can register in the app so that I can create my own shopping list
+   * As a Site User I can log in 
+   * As a Site User I can make a new shopping list
+   * As a Site User I can view my list of items so I know what i have to purchase
+   * As a Site User I can manage: add, delete, mark, update and read list 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Scope
+#### The ultimate goal was to allow logged in users to have full CRUD functionality for all their own content, time constraints meant this was limited to CRUD functionality for users only for their own tasks . More functionality for logged in users will be added in the future. 
 
-A blue button should appear to click: _Make Public_,
+### Structure
+#### The website consists of six pages: Registration, Main page, Add Item, Search Item, View, Delete and Log In/Log Out pages. Log in and Registration can be viewed by all users. Shopping List page is limited to logged in users.
 
-Another blue button should appear to click: _Open Browser_.
+### Existing Features
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Login page - existing user can login. 
 
-To log into the Heroku toolbelt CLI:
+![](list/images/login.jpeg)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Registration page - a new user can create an account adding his/her name ans password. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![](list/images/register.jpeg)
 
-------
+#### Main page - will show user's name and user can add, edit, view, delete, search and see how many items on the list to buy. The items which are purchased will be marked with crossed out and green dot from the left handside. 
 
-## Release History
+![](list/images/list.jpeg)
+![](list/images/marked.jpeg)
+#### Search page - user can search for items typing in a first letter. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![](list/images/search.jpeg)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Add item page - user can add a new item with a  "+" button. Title of item, description of the item,where to buy, how many to buy, complete button when item was pought, and save item button.  
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![](list/images/additem.jpeg)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### View/Edit - when item was added we can add some description in description box. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![](list/images/description.jpeg)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### Complete - when item was purchased we can mark as complete. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![](list/images/complete.jpeg)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Delete - when item is bought user can delete it with "x" button from the right hand side. Before that it will appear a message - "Are you sure you want to delete this item?"
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![](list/images/delete.jpeg)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Future Features
+  * A useful future feature would be to add a map for favourite shops
+  * Add an image field for User to save pictures their receipts
+  * User sign-in with Google/Facebooks
+  * Add sharing function via messeges or email
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+# Design
+### The design style of the website is minimalist, shiny, but clean looking.
+## Colours
+  * The main colours are green and yellow
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  * Font colours are black
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Typography
+  * The fonts selected were: Caveat. These were selected for similarity as handwriting
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Technologies Used
+## Languages
 
-------
+  * HTML5
+  * CSS
+  * Bootstrap 
+  * Python
+  * Django 
+  * GitPod
+  * GitHUb
+  * Chroome DevTools
+  * Heroku
+  * Google Fonts
 
-## FAQ about the uptime script
+## Database
 
-**Why have you added this script?**
+  * Heroku Postgres for the production database
+  * SQLite for the local environment for automated testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Deployment
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Heroku
+1. Creating the inital Django app
+   * First follow these steps to create your app: add to local deployment section: here
+   * Install Django and gunicorn: pip3 install django gunicorn
+   * Install supporting database libraries dj_database_url and psycopg2 library: pip3 install dj_database_url psycopg2
+   * Create file for requirements: in the terminal window type pip freeze --local > requirements.txt
+   * Create project: in the terminal window type django-admin startproject project_name .
+   * Create app: in the terminal window type python3 manage.py startapp app_name
+   * Add app to list of installed apps in settings.py file: 'app_name'
+   * Migrate changes: in the terminal window type python3 manage.py migrate
+   * Run the server to test if the app is installed: in the terminal window type python3 manage.py runserver
+   * If the app has been installed correctly the window will display The install worked successfully! Congratulations!
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+2. Create your Heroku app
+   * Navigate to the Heroku website
+   * In the Heroku browser window, create an account by entering your email address and a password
+   * Activate the account through the authentication email sent to your email account
+   * Click the new button and select create a new app from the dropdown menu
+   * Enter a name for the application which must be unique, in this case the app name is 'shoppinglistbypsz'
+   * Select a region, in this case Europe
+   * Click create app
 
-**So….?**
+3. Create the Database
+   * In the Heroku dashboard click on the Resources tab
+   * Scroll down to Add-Ons, search for and select 'Heroku Postgres'
+   * In the Settings tab, scroll down to 'Reveal Config Vars' and copy the text in the box beside DATABASE_URL.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+4. Set up Environment Variables
+   * In Gitpod create a new env.py file in the top level directory
+   * Add env.py to the .gitignore file
+   * In env.py import the os library
+   * In env.py add os.environ["DATABASE_URL"] = "Paste in the text link copied above from Heroku DATABASE_URL" from step 3 Insert yours here
+   * In env.py add os.environ["SECRET_KEY"] = "Make up your own random secret key"
+   * In Heroku Settings tab Config Vars enter the same secret key created in env.py by entering 'SECRET_KEY' in the box for 'KEY' and your randomly created secret key in the 'value' box.
+  
+5. Connect the environment variables to Django
+   * In your Django 'settings.py' file type:
+     * from pathlib import Path
+import os
+import dj_database_url
+if os.path.isfile("env.py"):
+ import env
+   * Remove the default insecure secret key in settings.py and replace with the link to the secret key variable i Heroku by typing: SECRET_KEY = os.environ.get(SECRET_KEY)
+   * Comment out the DATABASES section in settings.py and replace with:
+      * DATABASES = {
+  'default': 
+  dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  }`
+6. Make migrations
+   * In the terminal type:
+      * python3 manage.py makemigrations`
+      * python3 manage.py migrate`
+7. Create Procfile in top level directory:
+    * In Procfile add: web: gunicorn shoplist.wsgi
 
-**Can I opt out?**
+8. In terminal add, commit, and push:
+    * git add <filename>
+    * git commit -m 
+    * git push
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+9. Heroku Deployment:
+    * Click Deploy tab in Heroku
+    * In the 'Deployment method' section select 'Github' and click the 'connect to Github' button to confirm.
+    * In the 'search' box enter the Github repository name for the project: (https://github.com/peterszabo79/shoppinglist)
+    * Click search and then click connect to link the heroku app with the Github repository. The box will confirm that heroku is connected to the repository.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+10. Final Deployment
+    * When development is complete change the debug setting to: DEBUG = False in settings.py
+    * Because DEBUG must be switched to True for development and False for production it is recommended that only manual deployment is used in Heroku. The live deployment of the project can be seen [here](https://shoppinglistbypsz.herokuapp.com/login/)
+# Testing
+   * The testing phases have been carried out using the PIP8 Python Validator. No errors have been identified from the Validators.
+   * W3C Markup Validation Service - No errors or warnings to show
+   * W3C CSS Validation Service(Jigsaw) - No Error Found.
+   * Lighthouse Validator 
+   ![](list/images/desktop.jpeg)
+   ![](list/images/mobile.jpeg)
 
-**Anything more?**
+## Additional Tests
+   * Tests have been performed on Firefox, Opera, Chrome and Safari and the result is consistent in all the browsers on desktop and mobile devices
+# Credits
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+  * [Django To Do List App With User Registration & Login](https://www.youtube.com/c/Desphixs) used his code for above application
+  * Hello Django, I Think Therefore I Blog from Code Institute
 
----
+# Acknowledgements
 
-Happy coding!
+  ### There would have been no submission without the following people:
+   * Everyone in the Slack community and my cohort class, especially: Ronan McGill and Claudio Crocilla
+   * My mentor Spencer Barriball : for his endless knowledge, patience and advice
+   * My friends and my family
