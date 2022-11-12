@@ -84,7 +84,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'bikershopbypsz.wsgi.application'
+WSGI_APPLICATION = 'bikershop.wsgi.application'
 
 AUTH_USER_MODEL = 'accounts.Account'
 
