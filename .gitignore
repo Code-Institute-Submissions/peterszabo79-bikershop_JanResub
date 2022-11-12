@@ -1,3 +1,4 @@
+*.sqlite3
 core.Microsoft*
 core.mongo*
 core.python*
@@ -8,3 +9,8 @@ node_modules/
 .github/
 cloudinary_python.txt
 .env
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

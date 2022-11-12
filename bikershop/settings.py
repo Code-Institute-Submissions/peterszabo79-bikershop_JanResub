@@ -26,6 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
+# DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'carts',
     'orders',
     'admin_honeypot',
+    'cloudinary'
 ]
 
 MIDDLEWARE = [
@@ -90,21 +92,21 @@ AUTH_USER_MODEL = 'accounts.Account'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+#if 'DATABASE_URL' in os.environ:
+##########   DATABASES = {
+#########        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+ ########   }
+#####else:
+######    DATABASES = {
+ ####       'default': {
+  ###          'ENGINE': 'django.db.backends.sqlite3',
+  ##          'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+ #       }
+#   }
 
-#DATABASES = {
-#    'default': dj_database_url.parse('postgres://fdhfpunykgkrfy:ffbca0760e1220b430db866a6b3b852998a4e8eef318aba3108bddbc97fc620a@ec2-52-30-159-47.eu-west-1.compute.amazonaws.com:5432/dcliv2ousjjtel')
-#}
+DATABASES = {
+    'default': dj_database_url.parse('postgres://fdhfpunykgkrfy:ffbca0760e1220b430db866a6b3b852998a4e8eef318aba3108bddbc97fc620a@ec2-52-30-159-47.eu-west-1.compute.amazonaws.com:5432/dcliv2ousjjtel')
+}    
 
 
 # Password validation
