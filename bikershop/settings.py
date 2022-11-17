@@ -115,7 +115,7 @@ else:
    }
 
 #DATABASES = {
-#    'default': dj_database_url.parse('postgres://wxiwjgqj:g1tGRfp1g79CYcoT4YKLO-zCwpARlLYw@lucky.db.elephantsql.com/wxiwjgqj')
+#    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 #
 #}
     
