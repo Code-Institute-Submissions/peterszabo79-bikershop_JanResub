@@ -1,0 +1,52 @@
+[
+{
+    "model": "category.category",
+    "pk": 1,
+    "fields": {
+        "category_name": "Parts",
+        "slug": "parts",
+        "description": "New motorcycle parts",
+        "cat_image": "photos/categories/newparts.jpg"
+    }
+},
+{
+    "model": "category.category",
+    "pk": 2,
+    "fields": {
+        "category_name": "Used Parts",
+        "slug": "used-parts",
+        "description": "Used motorcycle parts",
+        "cat_image": "photos/categories/usedparts.jpg"
+    }
+},
+{
+    "model": "category.category",
+    "pk": 3,
+    "fields": {
+        "category_name": "T-Shirts",
+        "slug": "t-shirts",
+        "description": "Biker t shirts",
+        "cat_image": "photos/categories/2.png"
+    }
+},
+{
+    "model": "category.category",
+    "pk": 4,
+    "fields": {
+        "category_name": "Riding Jackets",
+        "slug": "riding-jackets",
+        "description": "biker jackets",
+        "cat_image": "photos/categories/riding_jacket.png"
+    }
+},
+{
+    "model": "category.category",
+    "pk": 5,
+    "fields": {
+        "category_name": "Jackets",
+        "slug": "jackets",
+        "description": "jackets",
+        "cat_image": "photos/categories/riding_jacket2.png"
+    }
+}
+]

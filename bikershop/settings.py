@@ -10,9 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-from pathlib import Path
 import dj_database_url
+from pathlib import Path
 from decouple import config
+import environ
+# Initialise environment variables
+env = environ.Env()
+environ.Env.read_env()
 
 import cloudinary
 import cloudinary_storage
@@ -96,24 +100,25 @@ AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+#https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
-   DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-  }
-else:
-    DATABASES = {
-       'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-       }
-   }
+#if 'DATABASE_URL' in os.environ:
+#   DATABASES = {
+#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#  }
+#else:
+#    DATABASES = {
+#       'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#       }
+#   }
 
-####DATABASES = {
-    ###'default': dj_database_url.parse('postgres://fdhfpunykgkrfy:ffbca0760e1220b430db866a6b3b852998a4e8eef318aba3108bddbc97fc620a@ec2-52-30-159-47.eu-west-1.compute.amazonaws.com:5432/dcliv2ousjjtel')
-#}    
+DATABASES = {
+    'default': dj_database_url.parse('postgres://wxiwjgqj:g1tGRfp1g79CYcoT4YKLO-zCwpARlLYw@lucky.db.elephantsql.com/wxiwjgqj')
 
+}
+    
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -174,6 +179,7 @@ MESSAGE_TAGS = {
 
 
 # SMTP configuration
+DEFAULT_FROM_EMAIL = 'test1peterszabo79@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT', cast=int)
