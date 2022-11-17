@@ -1,1 +1,1 @@
-web:gunicorn bikershop.wsgi:application
+web: gunicorn bikershop.wsgi:application
