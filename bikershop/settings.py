@@ -57,8 +57,8 @@ INSTALLED_APPS = [
     'carts',
     'orders',
     'admin_honeypot',
-    'cloudinary',
     'cloudinary_storage',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -159,12 +159,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATIC_ROOT = BASE_DIR /'static'
 STATICFILES_DIRS = [
     'bikershop/static',
 ]
 
 MEDIA_URL = '/peterszabo79/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 MEDIA_ROOT = BASE_DIR /'media'
 
 

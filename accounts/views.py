@@ -39,7 +39,7 @@ def register(request):
             profile.profile_picture = 'default/default-user.png'
             profile.save()
 
-            #USER ACTIVATION
+            # USER ACTIVATION
             current_site = get_current_site(request)
             mail_subject = 'Please activate your account'
             message = render_to_string('accounts/account_verification_email.html', {
