@@ -1,0 +1,164 @@
+[
+{
+    "model": "accounts.account",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$FqVUyx2bpLkc$qSnrIKvFEi7Kvh9gJ8GgHJL030i4ifaIrizXQg1qqOg=",
+        "first_name": "PETER",
+        "last_name": "szabo",
+        "username": "peterszabo",
+        "email": "peterszabo79@gmail.com",
+        "phone_number": "00353876902894",
+        "date_joined": "2022-10-25T19:47:36.322Z",
+        "last_login": "2022-11-17T10:00:09.839Z",
+        "is_admin": true,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": true
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 43,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$IjwU7WZzqZfO$mePtOlxuQlkNh/fnl+VMnwYSriVOXwOmlgALpkQwG9w=",
+        "first_name": "Peter",
+        "last_name": "Szabo",
+        "username": "testpeterszabo79",
+        "email": "testpeterszabo79@gmail.com",
+        "phone_number": "353876902894",
+        "date_joined": "2022-11-12T11:40:04.748Z",
+        "last_login": "2022-11-12T11:40:32.524Z",
+        "is_admin": false,
+        "is_staff": false,
+        "is_active": true,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 47,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$bSmdlaMcechr$tAzdwgWPO6hCAykzS2Tl47tCNwySVheWc7GEhRqIx04=",
+        "first_name": "Peteryahoo",
+        "last_name": "Szabo",
+        "username": "peterszabo79",
+        "email": "peterszabo79@yahoo.com",
+        "phone_number": "56353876905783",
+        "date_joined": "2022-11-14T20:30:16.582Z",
+        "last_login": "2022-11-14T20:30:16.582Z",
+        "is_admin": false,
+        "is_staff": false,
+        "is_active": false,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 48,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$k2RTm8LpOXrb$4ti5zu38cSebnLQ9ijv20U/4thEe7dC3VTlu8zO4cV8=",
+        "first_name": "aefas",
+        "last_name": "asDFAS",
+        "username": "ASDEFASDFpeterszabo79",
+        "email": "ASDEFASDFpeterszabo79@gmail.com",
+        "phone_number": "666353876902894",
+        "date_joined": "2022-11-17T09:10:22.511Z",
+        "last_login": "2022-11-17T09:10:22.511Z",
+        "is_admin": false,
+        "is_staff": false,
+        "is_active": false,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 49,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$P5817Rs4LqoK$MZKDJV94Rq4gY6jlQu1ij4ASrm0k1QnZbkgSZdSeJec=",
+        "first_name": "wqdq",
+        "last_name": "QDW",
+        "username": "DDpeterszabo79",
+        "email": "DDpeterszabo79@gmail.com",
+        "phone_number": "+353876902894",
+        "date_joined": "2022-11-17T09:16:03.355Z",
+        "last_login": "2022-11-17T09:16:03.355Z",
+        "is_admin": false,
+        "is_staff": false,
+        "is_active": false,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 50,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$rwVA7w68xeP3$kYL8jNfupACPquQnag0NQYGiNE1s6Cl5honnmyVujHQ=",
+        "first_name": "eafs",
+        "last_name": "QDWdsfsdf",
+        "username": "akarmi",
+        "email": "akarmi@gmial.com",
+        "phone_number": "+353876902894",
+        "date_joined": "2022-11-17T09:17:02.098Z",
+        "last_login": "2022-11-17T09:17:02.099Z",
+        "is_admin": false,
+        "is_staff": false,
+        "is_active": false,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 51,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$ap4aQAYrD6OG$asIqowkAsGfrZPP6o96KSnmZAZgI3VjJVs5joCvpQ2Q=",
+        "first_name": "geza",
+        "last_name": "Szabo",
+        "username": "gezapeterszabo79",
+        "email": "gezapeterszabo79@gmail.com",
+        "phone_number": "+353876905783",
+        "date_joined": "2022-11-17T14:09:56.128Z",
+        "last_login": "2022-11-17T14:21:28.345Z",
+        "is_admin": false,
+        "is_staff": false,
+        "is_active": true,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 52,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$bqN4RHFykRXG$HTS5q8LhyVBn59Baev/qP94+gq0JaQ/MWjW5o47w9gM=",
+        "first_name": "janko",
+        "last_name": "janko",
+        "username": "jankopeterszabo79",
+        "email": "jankopeterszabo79@gmail.com",
+        "phone_number": "1353876902894",
+        "date_joined": "2022-11-18T09:31:08.068Z",
+        "last_login": "2022-11-18T09:31:08.068Z",
+        "is_admin": false,
+        "is_staff": false,
+        "is_active": false,
+        "is_superadmin": false
+    }
+},
+{
+    "model": "accounts.account",
+    "pk": 53,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$zD9ZAsV1qhjT$zqhKKAOBxv0CDgimUXyqrLR1Ah+q4xuX+WjZERs6uF8=",
+        "first_name": "admin",
+        "last_name": "admin",
+        "username": "admin",
+        "email": "peterszabo799@gmail.com",
+        "phone_number": "",
+        "date_joined": "2022-11-20T10:38:50.633Z",
+        "last_login": "2022-11-20T10:47:07.187Z",
+        "is_admin": true,
+        "is_staff": true,
+        "is_active": true,
+        "is_superadmin": true
+    }
+}
+]
