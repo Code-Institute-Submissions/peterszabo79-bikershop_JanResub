@@ -11,10 +11,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import dj_database_url
+import env
 from pathlib import Path
 from decouple import config
 import environ
-import env
+
 # Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
