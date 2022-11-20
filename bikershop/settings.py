@@ -168,7 +168,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR  #os.path.join(BASE_DIR, 'static') #BASE_DIR /'static'
 STATICFILES_DIRS = [
-    'bikershop/static',
     'static'
 ]
 
