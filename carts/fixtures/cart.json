@@ -1,0 +1,34 @@
+[
+{
+    "model": "carts.cart",
+    "pk": 10,
+    "fields": {
+        "cart_id": "ur6lvmf6hb3ijb69b27htc0g0k1hdv7q",
+        "date_added": "2022-11-06"
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 11,
+    "fields": {
+        "cart_id": "gohobij5rj5dk2a92g6othqf1ilz31js",
+        "date_added": "2022-11-06"
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 12,
+    "fields": {
+        "cart_id": "rj02zsj16die5hh58etsnqjbx1bhe09z",
+        "date_added": "2022-11-06"
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 13,
+    "fields": {
+        "cart_id": "0gd2m3art6bskuppr8mfiql1qltzko25",
+        "date_added": "2022-11-08"
+    }
+}
+]
