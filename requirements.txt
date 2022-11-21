@@ -43,4 +43,3 @@ texttable==1.6.4
 tox==3.27.1
 wcwidth==0.1.9
 websocket-client==0.59.0
-whitenoise==6.2.0
