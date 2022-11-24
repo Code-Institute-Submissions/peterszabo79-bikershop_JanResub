@@ -180,8 +180,8 @@ USE_TZ = True
 # Enable WhiteNoise's GZip compression of static assets.
 #STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR #/'static'  #os.path.join(BASE_DIR, 'static') 
+STATIC_URL = '/static/'
+STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles') #BASE_DIR #/'static'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
