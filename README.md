@@ -10,6 +10,8 @@ Must tidy my code
 
 Fix my images (name, size, add more to some categories)
 
+Add variations to my products
+
 Add FAQ
 
 # BikerShop
