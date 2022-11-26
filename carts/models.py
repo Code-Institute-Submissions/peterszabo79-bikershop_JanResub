@@ -1,6 +1,7 @@
 from django.db import models
 from store.models import Product, Variation
 from accounts.models import Account
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 

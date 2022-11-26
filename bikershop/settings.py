@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import dj_database_url
-import env
+if os.path.isfile("env.py"):
+    import env
 from pathlib import Path
 from decouple import config
 import environ
@@ -42,7 +43,9 @@ FIXTURE_DIRS = (
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
@@ -125,17 +128,17 @@ AUTH_USER_MODEL = 'accounts.Account'
 #       }
 #   }
 
-#DATABASES = {
-#    'default': dj_database_url.parse('postgres://ctvhyslf:XSctb-cwbjCM8PjInyWDzYuqh9dJMQYV@lucky.db.elephantsql.com/ctvhyslf')
-#
-#}
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
 
     
 
@@ -180,6 +183,8 @@ USE_TZ = True
 
 # Enable WhiteNoise's GZip compression of static assets.
 #STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage' 
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
@@ -187,10 +192,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #BASE_DIR #/'static'
 
 
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage' 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'peterszabo79')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'peterszabo79')
 
 #STATIC_URL = '/static/'
 #STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
