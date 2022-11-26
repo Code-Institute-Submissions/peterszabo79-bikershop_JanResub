@@ -29,6 +29,7 @@ development = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 FIXTURE_DIRS = (
@@ -47,9 +48,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
 #DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
-
-
+#ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
+ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
@@ -58,15 +58,16 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'admin_honeypot',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
     'category',
     'accounts',
     'store',
     'carts',
     'orders',
-    'admin_honeypot',
-    'cloudinary_storage',
-    'django.contrib.staticfiles',
-    'cloudinary',
+    
 ]
 
 MIDDLEWARE = [
@@ -89,7 +90,7 @@ ROOT_URLCONF = 'bikershop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -181,11 +182,13 @@ USE_TZ = True
 #STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 STATIC_URL = '/static/'
-STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles') #BASE_DIR #/'static'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #BASE_DIR #/'static'
 
-MEDIA_URL = '/peterszabo79/' 
+
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage' 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'peterszabo79')
 
@@ -225,7 +228,7 @@ CLOUDINARY_STORAGE = {
 }
 
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 
 
