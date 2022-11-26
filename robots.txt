@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:/accounts/
+Disallow:/store/
+Disallow:/orders/
+Sitemap: https://bikershopbypsz.herokuapp.com/sitemap.xml
