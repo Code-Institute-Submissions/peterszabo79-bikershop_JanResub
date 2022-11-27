@@ -50,8 +50,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True, cast=bool)
 #DEBUG = 'DEVELOPMENT' in os.environ
 
-#ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
-ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
+#ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [

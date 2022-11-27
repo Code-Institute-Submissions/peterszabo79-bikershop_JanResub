@@ -1,5 +1,7 @@
 I couldn’t finish my project.
 
+My DEBUG=True.  if is it False got server 500 error 
+
 The deployed site didn’t load static files correctly
 
 Email sending not working(registration, order received)
