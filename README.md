@@ -1,6 +1,6 @@
 I couldn’t finish my project.
 
-The deployed site didn’t load static files
+The deployed site didn’t load static files correctly
 
 Email sending not working(registration, order received)
 
@@ -13,6 +13,8 @@ Fix my images (name, size, add more to some categories)
 Add variations to my products
 
 Add FAQ
+
+
 
 # BikerShop
 ![]()
