@@ -13,6 +13,7 @@ import os
 import dj_database_url
 import env
 from pathlib import Path
+from django.contrib.messages import constants as messages
 from decouple import config
 import environ
 
@@ -60,6 +61,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'category',
     'accounts',
     'store',
@@ -71,6 +76,19 @@ INSTALLED_APPS = [
     'cloudinary',
     
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+MESSAGE_TAGS = {
+        messages.DEBUG: 'alert-info',
+        messages.INFO: 'alert-info',
+        messages.SUCCESS: 'alert-success',
+        messages.WARNING: 'alert-warning',
+        messages.ERROR: 'alert-danger',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -209,20 +227,6 @@ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-from django.contrib.messages import constants as messages
-MESSAGE_TAGS = {
-    messages.ERROR: 'danger',
-}
-
-
-# SMTP configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 CLOUDINARY_STORAGE = {
   'CLOUD_NAME' : 'peterszabo79', 
@@ -234,8 +238,16 @@ CLOUDINARY_STORAGE = {
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage' 
 
 
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
 
-
-
-
-
+# SMTP configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')

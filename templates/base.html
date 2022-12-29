@@ -20,10 +20,11 @@
 
 	<!-- jQuery -->
 	<script src="{% static 'js/jquery-2.0.0.min.js' %}"></script>
-	<!--<link rel="stylesheet" href="{% static 'images/favicon.ico' %}">-->
+	<!--<link rel="stylesheet" href="{% static 'js/jquery-2.0.0.min.js' %}">-->
 
 
 	<!-- Bootstrap4 files-->
+	
 	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
 	<!--<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">-->
@@ -66,10 +67,35 @@
 		});
 		// jquery end
 	</script>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+			{% for message in messages %}
+			<div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+				{{ message | safe }}
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
 
 </head>
 
 <body>
+	{% include 'includes/alerts.html' %}
+	<div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
 	<!-- navbar -->
 	{% include 'includes/navbar.html' %}

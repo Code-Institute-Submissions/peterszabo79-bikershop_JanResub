@@ -19,6 +19,7 @@ from . import views
 
 from django.conf.urls.static import static
 from django.conf import settings
+from .views import handler404
 
 
 urlpatterns = [
@@ -28,7 +29,10 @@ urlpatterns = [
     path('store/', include('store.urls')),
     path('cart/', include('carts.urls')),
     path('accounts/', include('accounts.urls')),
+    path('accounts/', include('allauth.urls')),
 
     # ORDERS
     path('orders/', include('orders.urls')),
 ] 
+
+handler404 = 'bikershop.views.handler404'
