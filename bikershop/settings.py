@@ -48,7 +48,8 @@ SECRET_KEY = config('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=True, cast=bool)
+# DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = False
 #DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
@@ -92,6 +93,7 @@ MESSAGE_TAGS = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -205,9 +207,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'peterszabo79')
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #BASE_DIR #/'static'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') #BASE_DIR #/'static'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'staticfiles'),
+]
+
+#STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 
 
@@ -248,6 +254,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_USER = 'test1peterszabo79@gmail.com'
+EMAIL_HOST_PASSWORD = "ppjx xufp tfrv ngpv"
+DEFAULT_FROM_EMAIL = 'test1peterszabo79@gmail.com'

@@ -13,6 +13,8 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import EmailMessage
+from django.core.mail import send_mail
+
 
 from carts.views import _cart_id
 from carts.models import Cart, CartItem
@@ -49,10 +51,15 @@ def register(request):
                 'token': default_token_generator.make_token(user),
             })
             to_email = email
-            send_email = EmailMessage(mail_subject, message, to=[to_email])
-            send_email.send()
+            send_mail(
+                mail_subject,
+                message,
+                'test1peterszabo79@gmail.com',
+                [to_email],
+                fail_silently=False,
+            )
             messages.success(request, 'Thank you for registering with us. We have sent you a verification email to your email address [test1peterszabo79@gmail.com]. Please verify it.')
-        return redirect('accounts/login/?command=verification&email='+email)
+            return redirect('/accounts/login/?command=verification&email='+email)
     else:
         form = RegistrationForm()
     context = {
