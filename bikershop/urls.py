@@ -19,7 +19,7 @@ from . import views
 
 from django.conf.urls.static import static
 from django.conf import settings
-from .views import handler404
+from .views import handler404, handler500, handler403, handler405
 
 
 urlpatterns = [
@@ -36,3 +36,6 @@ urlpatterns = [
 ] 
 
 handler404 = 'bikershop.views.handler404'
+handler403 = 'bikershop.views.handler403'
+handler405 = 'bikershop.views.handler405'
+handler500 = 'bikershop.views.handler500'
