@@ -26,7 +26,7 @@ import cloudinary_storage
 import cloudinary.uploader
 import cloudinary.api
 
-development = os.environ.get('DEVELOPMENT', False)
+#development = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -49,7 +49,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = config('DEBUG', default=True, cast=bool)
-DEBUG = True
+DEBUG = False
 #DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
