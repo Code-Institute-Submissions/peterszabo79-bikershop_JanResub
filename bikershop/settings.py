@@ -49,7 +49,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = config('DEBUG', default=True, cast=bool)
-DEBUG = False
+DEBUG = True
 #DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
