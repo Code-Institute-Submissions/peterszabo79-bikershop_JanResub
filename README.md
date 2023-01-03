@@ -154,17 +154,17 @@ Anything requiring a third colour (such as hovering over darker links which are 
 
 
 
+Home page
+
+![Wireframe for main shop page](media/photos/wireframe%20home.jpeg)
+
 Shop page
 
-![Wireframe for main shop page](static/media/readme_media/shop-wf.jpg)
+![Wireframe for product detail page](media/photos/wireframe%20shop.jpeg)
 
-Product detail
+Login page
 
-![Wireframe for product detail page]()
-
-Custom product confirmation
-
-![Wireframe for final quote page]()
+![Wireframe for final quote page](media/photos/wireframelogin.jpeg)
 
 Shopping bag view
 
