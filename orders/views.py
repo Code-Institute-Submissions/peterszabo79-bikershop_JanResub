@@ -33,7 +33,7 @@ def payments(request):
 
     for item in cart_items:
         orderproduct = OrderProduct()
-        orderproduct.order_id = order.id
+        orderproduct.order_number = order.id
         orderproduct.payment = payment
         orderproduct.user_id = request.user.id
         orderproduct.product_id = item.product_id
