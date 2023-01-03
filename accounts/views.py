@@ -295,9 +295,5 @@ def order_detail(request, order_number):
     for i in order_detail:
         subtotal += i.product_price * i.quantity
 
-    context = {
-        'order_detail': order_detail,
-        'order': order,
-        'subtotal': subtotal,
-    }
-    return render(request, 'accounts/order_detail.html', context)
+   
+    return render(request, 'accounts/change_password.html')
