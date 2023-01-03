@@ -2,6 +2,7 @@
 {% extends 'base.html' %}
 {% load cloudinary_static %}
 {% load static %}
+{% load cloudinary %}
 
 
 {% block content %}
@@ -12,8 +13,8 @@
 <div class="container">
 
 <div class="intro-banner-wrap">
-	<img class="img-fluid rounded" src="{% static 'images/1.jpg' %}">
-	<link rel="stylesheet" href="{% static 'static/images/banners/1.jpg' %}">
+	<img class="img-fluid rounded" src="{% static 'images/banner.jpg' %}">
+	<link rel="stylesheet" href="{% static 'static/images/banners/banner.jpg' %}">
 </div>
 
 </div> <!-- container //  -->

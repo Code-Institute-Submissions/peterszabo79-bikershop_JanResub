@@ -49,7 +49,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = config('DEBUG', default=True, cast=bool)
-DEBUG = False
+DEBUG = True
 #DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
@@ -254,5 +254,5 @@ EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'test1peterszabo79@gmail.com'
 print(EMAIL_HOST_USER)
-EMAIL_HOST_PASSWORD = "ppjx xufp tfrv ngpv"
+EMAIL_HOST_PASSWORD = "agff ldyi dzos xmrr"
 DEFAULT_FROM_EMAIL = 'test1peterszabo79@gmail.com'
