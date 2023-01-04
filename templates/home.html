@@ -1,4 +1,3 @@
-
 {% extends 'base.html' %}
 {% load cloudinary_static %}
 {% load static %}
@@ -13,8 +12,8 @@
 <div class="container">
 
 <div class="intro-banner-wrap">
-	<img class="img-fluid rounded" src="{% static 'images/banner.jpg' %}">
-	<link rel="stylesheet" href="{% static 'static/images/banners/banner.jpg' %}">
+	<img class="img-fluid rounded" src="{% static 'images/banner.jpg' %}" alt="redchopper">
+	<link rel="stylesheet" href="{% static 'static/images/banners/banner.jpg' %}" alt="redchopper">
 </div>
 
 </div> <!-- container //  -->
@@ -35,7 +34,7 @@
 	{% for product in products %}
 	<div class="col-md-3">
 		<div class="card card-product-grid">
-			<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
+			<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.images.url }}" alt="products"> </a>
 			<figcaption class="info-wrap">
 				<a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
 				<div class="price mt-1">EUR {{ product.price }}</div> <!-- price-wrap.// -->

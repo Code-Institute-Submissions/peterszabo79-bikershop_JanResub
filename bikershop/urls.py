@@ -19,7 +19,7 @@ from . import views
 
 from django.conf.urls.static import static
 from django.conf import settings
-from .views import handler404, handler500, handler403, handler405
+from .views import handler404, handler500, handler403, handler405, handler400
 
 
 urlpatterns = [
@@ -35,6 +35,7 @@ urlpatterns = [
     path('orders/', include('orders.urls')),
 ] 
 
+handler400 = 'bikershop.views.handler400'
 handler404 = 'bikershop.views.handler404'
 handler403 = 'bikershop.views.handler403'
 handler405 = 'bikershop.views.handler405'

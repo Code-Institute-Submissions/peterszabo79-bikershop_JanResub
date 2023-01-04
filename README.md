@@ -16,22 +16,20 @@ Add variations to my products
 
 Add FAQ
 
-
+# BikerShop
+![](media/photos/imiresponsive.jpeg)
 ## Readme
 
 ### Table of contents:
 
 [Theme, Epic and User Stories](#theme-epic-and-user-stories) 
 
-[Design and UX](#design-and-ux) 
+[Design](#design) 
 * [Wireframes](#wireframes)
-* [Database model](#database-model)
 
 [Features](#features)
 
-[Future Features](#future-features)
-
-[SEO and Marketing](#seo-and-marketing)
+[SEO](#seo)
 
 [Technologies](#technologies)
 
@@ -43,20 +41,14 @@ Add FAQ
 
 [Resources](#resources)
 
-[Credits](#credits)
-
-[Acknowledgements](#acknowledgements)
+[Acknowledgements, Credits](#acknowledgements-credits)
 
 
 # BikerShop
-![]()
+![screenshot](media/photos/imiresponsive.jpeg)
 
 
 ### The live website can be seen [here](https://bikershopbypsz.herokuapp.com/)
-
-Screenshot:
-
-![Screenshot from am i responsive]()
 
 ### Theme, Epic and User Stories
 
@@ -68,8 +60,15 @@ To sell motorcycle clothes and new, used parts online.
 
 This website will provide the user to buy everything what can belongs a motorcycle owner. Protective and casual clothes, new, used, one of a kind parts. The website will be simple and easy to use; a good experience for the user that will make their time in the shop welcoming. 
 
-### Agile
-The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board which can be seen here -  
+#### Overall Goals
+* Create an e-commerce cloud-hosted Full-Stack web application to sell motorcyle-riding related products online.
+* Allow users access to full CRUD (create, read, update and deleted) functionality on user profile.
+* To provide users with a targeted product selection and smooth customer experience when shopping on BikerStore.
+
+#### Agile
+The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board which can be seen here  
+
+![Kanban board](media/photos/kanban.jpeg)
 
 Through the use of the Kanban board in the projects view in Github, the project was divived into a few different sections:
 * Backlog
@@ -78,6 +77,10 @@ Through the use of the Kanban board in the projects view in Github, the project 
 * Done
 
 ### User stories
+
+As a **user/owner**, I can **sign in and out intuitively** so that **I can use the website easily**.
+
+As a **user/owner**, I can **navigate the website easily and intuitively** so that **I can explore the website freely**.
 
 #### User
 
@@ -97,10 +100,6 @@ As a **user**, I can **edit my user information** so that **I can have the corre
 
 As a **user**, I can **easily find the site's privacy policy and other important information** so that **I can use the site knowing I am protected**.
 
-
-As a **user**, I can **assign the stats of each item**, so that **I can have an experience outside of the standard online shopping experience**.
-
-
 As a **user** I can **update the shopping bag** so that **I can keep track of my shopping while I browse the site**.
 
 As a **user** I can **view my order history** so that **I know what I have already ordered**.
@@ -112,7 +111,7 @@ As a **user** I can **write rewievs** so that **I can help to decide for other u
 
 As a **owner**, I can **control stock levels** so that **I can control the amount of products I sell**.
 
-As a **owner**, I can **be notified by email if an order comes in** so that **I can action the sale**.
+As a **owner**, I can **be notified if an order comes in** so that **I can action the sale**.
 
 As a **owner**, I can **view all orders placed on the site and see the current order status** so that **I know if there is an order I have to process**.
 
@@ -122,37 +121,21 @@ As a **owner**, I can **easily provide the site privacy policy** so that **I can
 
 As a **owner**, I can **use web marketing** so that **I can increase website traffic and sales**.
 
-
 As a **owner** I can **edit/delete rewiews** so that **users can see the correct information**.
 
-
 As a **owner**, I will **be provided with search engine optimisation for my site** so that **I can receive increased traffic and sales**.
-
 
 As a **owner** I can **easily edit product requests** so that **I can make changes without a lengthy back and forth of emails**.
 
 
 
-As a **user/owner**, I can **sign in and out intuitively** so that **I can use the website easily**.
+### Design
 
-As a **user/owner**, I can **navigate the website easily and intuitively** so that **I can explore the website freely**.
+The main goal was an easy simple website.Matching design as a popular Facebook site.
+Main colurs are white and blue.
 
-
-### Design and UX
-
-Light text on a dark background can be very striking, but hard to parse for large amounts of text. For my navbar, footer and landing page I chose light text on a dark background as it is arresting and blends seamlessly with the background. For larger amounts of text, such as posts in the battle arena, or anything with an image that needs to be overlaid, such as the shop, I switched back to a light background with dark text to make it easier for the user to take in. To keep the dark theme throughout the website, I kept the dark background and placed the text and images on cards or card-like elements so that all pages felt unified.
-
-The colors implemented across the site are:
-
-Dark options: #050533
-
-Light options: #faebd7
-
-Anything requiring a third colour (such as hovering over darker links which are on a light background): #534582
 
 ### Wireframes
-
-
 
 Home page
 
@@ -160,83 +143,161 @@ Home page
 
 Shop page
 
-![Wireframe for product detail page](media/photos/wireframe%20shop.jpeg)
+![Wireframe for shop page](media/photos/wireframe%20shop.jpeg)
 
 Login page
 
-![Wireframe for final quote page](media/photos/wireframelogin.jpeg)
+![Wireframe for login page](media/photos/wireframelogin.jpeg)
 
-Shopping bag view
+Register page
 
-![Wireframe for shopping bat]()
+![Wireframe for register page](media/photos/wireframeregister.jpeg)
 
-Checkout view
+Shopping bag page
 
-![Wireframe for checkout]()
+![Wireframe for Shopping bag](media/photos/wireframebag.jpeg)
+
+Chekout page
+
+![Wireframe for Checkout](media/photos/wireframecheckout.jpeg)
+
+Product detail page
+
+![Wireframe for Product](media/photos/wireframeproduct.jpeg)
 
 User profile page
 
-![Wireframe for user profile]()
+![Wireframe for user profile](media/photos/wireframeuser.jpeg)
 
 ### Features
 
-Landing page - statement that describes the site and a striking image.
+Home page
 
-![Landing page]()
+![Home page](media/photos/homepage.jpeg)
 
 Navbar 
 
-![Navbar]()
+![Navbar](media/photos/navbar.jpeg)
 
-![Shop]()
+Store page
 
-![Product detail]()
+![Store](media/photos/store.jpeg)
 
-![Cart]()
+Product detail page
 
-![Review]()
+![Product detail](media/photos/productdetai.jpeg)
 
-![Checkout]()
+Shopping cart
 
-![PayPall]()
+![Cart](media/photos/cart.jpeg)
 
-![Dashboard]()
+Review
 
-![Privacy policy]()
+![Review](media/photos/review.jpeg)
 
-![Footer]()
+Checkout
 
+![Checkout](media/photos/checkou.jpeg)
 
+Place order
 
-### SEO and Marketing
+![Place order](media/photos/placeorder.jpeg)
 
+PayPall payment
+
+![PayPall](media/photos/paypall.jpeg)
+
+Dashboard
+
+![Dashboard](media/photos/dashboard.jpeg)
+
+### SEO
+Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
+
+![SEO](media/photos/webmarketing.jpeg)
+
+### Marketing
+
+### User Needs
+
+B2C business:
+
+Questions asked:
+
+What do your users need?
+
+A clothes/parts for motorcycle riding.
+
+What information and features can you provide to meet those needs?
+
+A clear display of clothes, parts, choices and prices. Easy and straightforward to purchase products.
+
+How can you make the information easy to understand?
+
+Intuitive and clear design, high quality clear images, clear and descriptive titles, simple payment process, simple signup/login/logout process.
+
+How can you demonstrate expertise, authoritativeness and trustworthiness in your content?
+
+Pages including Reviews about products and Privacy Policy, chance to subscribe.
+
+Would there be other pages within your own site you could link to from your chosen page?
+
+Home page, nav bar, custom product pages would also link back to primary shop page. Error pages also link back to shop page.
+
+Are there opportunities to link back to external websites that already rank highly on Google?
+
+Who are your users?
+Bikers, motorcycle enthusiast.
+
+### Marketing Strategies
+
+Which online platforms would you find lots of your users?
+
+Social media -  Facebook, if the shop gains more staff could possibly reach into other platforms, like Instagram, Twitter.
+
+![Facebook page](media/photos/facebook.jpeg)
 
 ### Technologies
 
-Python 3
-
-HTML5
-
+Python 
+HTML
 CSS3
-
 Javascript
-
-
 Django 
-
-Bootstrap 4
-
-Cloudinary - for hosting the images
-
+Bootstrap 
+Cloudinary
 ElephantSQL
-
-GitHub - for hosting the site
-
-Heroku - for the deployment of the site
-
-Gitpod - for editing the files
+GitHub
+Heroku
+Gitpod
+Balsamiq
+Photos by Apple
+amiresponsive
+Google Chrome Devtools
 
 ### Testing
+
+#### Code Validation
+
+[Python validator](https://infoheap.com/python-lint-online/)
+
+Python is valid
+
+![Python](media/photos/validpython.jpeg)
+
+[Javascript validator](https://jshint.com/)
+
+No Error Found
+
+![JS](media/photos/validjs.jpeg)
+
+[CSS validator](https://jigsaw.w3.org/css-validator/)
+
+No Error Found
+
+![CSS](media/photos/valaidcss.jpeg)
+
+[HTML validator](https://validator.w3.org/)
 
 
 

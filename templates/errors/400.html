@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-3">
+            <h1 class="display-4 error-page-header">
+                Bad Request (400)
+            </h1>
+            <p class="lead-error-p">Oops! Something has gone wrong with our website.</p>
+            <hr class="my-4">
+            <p>This isn't a problem with your browser, your computer, or your internet connection. We have been alerted
+                to this issue and will have a coffee and start fixing it.</p>
+            <p>Please use the button below to return to our store.</p>
+            <p class="lead">
+                <a class="btn btn-outline-primary" href="{% url 'home' %}" role="button">Home</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
