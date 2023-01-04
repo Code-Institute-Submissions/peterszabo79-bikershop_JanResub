@@ -19,7 +19,7 @@ from . import views
 
 from django.conf.urls.static import static
 from django.conf import settings
-from .views import handler404, handler500, handler403, handler405, handler400
+from .views import handler404, handler500, handler403, handler405, handler500
 
 
 urlpatterns = [
