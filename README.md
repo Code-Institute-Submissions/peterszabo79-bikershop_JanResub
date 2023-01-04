@@ -285,6 +285,12 @@ No Error Found
 
 ![CSS](media/photos/valaidcss.jpeg)
 
+[HTML validator](https://www.site24x7.com/tools/html-validator.html)
+
+No Error Found
+
+![HTML](media/photos/validatehtml.jpeg)
+
 ### Lighthouse Testing
 
 Testing was conducted using Google Chrome Devtools Lighthouse
