@@ -301,9 +301,15 @@ No Error Found
 
 ![CSS](media/photos/valaidcss.jpeg)
 
-[HTML validator](https://validator.w3.org/)
+### Lighthouse Testing
 
+Testing was conducted using Google Chrome Devtools Lighthouse
 
+![Results of the Lighthouse test](media/photos/lighthouse.jpeg)
+
+### Manual Testing
+
+I sent the live link to friends and family members for testing and feedback. The site was received positively; design and usability suggestions were considered and acted on.
 
 ### Debugging and known bugs
 
