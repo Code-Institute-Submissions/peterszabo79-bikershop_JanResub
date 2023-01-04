@@ -46,11 +46,17 @@ SECRET_KEY = config('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+#DEBUG = False
 #DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
+DEBUG = True if os.environ.get('DEBUG') == 'True' else False
+
+#ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
+ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
 # Application definition
+
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io']
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
