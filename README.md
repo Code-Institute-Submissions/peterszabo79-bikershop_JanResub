@@ -211,6 +211,10 @@ Dashboard
 
 ![Dashboard](media/photos/dashboard.jpeg)
 
+Order detail
+
+![Dashboard](media/photos/OrderDetail.jpeg)
+
 ### SEO
 Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
 
