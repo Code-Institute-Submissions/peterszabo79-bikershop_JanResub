@@ -1,22 +1,5 @@
-I couldn’t finish my project.
-
-My DEBUG=True.  if is it False got server 500 error 
-
-The deployed site didn’t load static files correctly
-
-Email sending not working(registration, order received)
-
-Readme not ready
-
-Must tidy my code
-
-Fix my images (name, size, add more to some categories)
-
-Add variations to my products
-
-Add FAQ
-
 # BikerShop
+
 ![](media/photos/imiresponsive.jpeg)
 ## Readme
 
@@ -25,7 +8,8 @@ Add FAQ
 [Theme, Epic and User Stories](#theme-epic-and-user-stories) 
 
 [Design](#design) 
-* [Wireframes](#wireframes)
+
+[Wireframes](#wireframes)
 
 [Features](#features)
 
@@ -309,11 +293,9 @@ Testing was conducted using Google Chrome Devtools Lighthouse
 
 ### Manual Testing
 
-I sent the live link to friends and family members for testing and feedback. The site was received positively; design and usability suggestions were considered and acted on.
-
-### Debugging and known bugs
-
-
+I sent the live link to friends and family members for testing different 
+browsers, devices and feedback. The site was received positively; design and 
+usability suggestions were considered and acted on.
 
 ### Deployment
 

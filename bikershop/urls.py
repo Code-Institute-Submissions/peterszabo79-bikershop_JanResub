@@ -33,7 +33,7 @@ urlpatterns = [
 
     # ORDERS
     path('orders/', include('orders.urls')),
-] 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler400 = 'bikershop.views.handler400'
 handler404 = 'bikershop.views.handler404'
