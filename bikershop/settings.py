@@ -246,7 +246,7 @@ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 CLOUDINARY_STORAGE = {
   'CLOUD_NAME' : 'peterszabo79', 
   'API_KEY' : '184378976163428', 
-  'API_SECRET' : os.environ.get('API_SECRET'),
+  'API_SECRET' : 'BY_XOmOuuwUijdXNfH9d3iqEtqI',
 
 }
 
