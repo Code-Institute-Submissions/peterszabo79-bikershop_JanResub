@@ -218,15 +218,29 @@ Dashboard
 
 ![Dashboard](media/photos/dashboard.jpeg)
 
+My Orders
+
+![MyOrders](media/photos/myorders.jpeg)
+
+Change password
+
+![Changepassword](media/photos/changepassword.jpeg)
+
+Password Update
+
+![Passwordupdate](media/photos/passwordupdatesuccess.jpeg)
+
 Order detail
 
 ![Dashboard](media/photos/OrderDetail.jpeg)
 
-
-
 Review
 
 ![Review](media/photos/review.jpeg)
+
+Error
+
+![Error](media/photos/error.jpeg)
 
 ### SEO
 Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
