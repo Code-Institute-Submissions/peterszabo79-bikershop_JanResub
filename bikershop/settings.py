@@ -60,6 +60,8 @@ ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), '*']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io']
 
+
+
 USE_X_FORWARDED_HOST = True
 
 
