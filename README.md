@@ -29,7 +29,10 @@
 
 
 # BikerShop
-![screenshot](media/photos/imiresponsive.jpeg)
+
+QR code
+
+![QR](media/photos/qrbikershop.png)
 
 
 ### The live website can be seen [here](https://bikershopbypsz.herokuapp.com/)
@@ -198,6 +201,10 @@ Dashboard
 Order detail
 
 ![Dashboard](media/photos/OrderDetail.jpeg)
+
+Payment successful
+
+![Dashboard](media/photos/paymentsuccess.jpeg)
 
 ### SEO
 Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
