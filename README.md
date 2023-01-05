@@ -178,9 +178,21 @@ Shopping cart
 
 ![Cart](media/photos/cart.jpeg)
 
-Review
+SignUp
 
-![Review](media/photos/review.jpeg)
+![Signup](media/photos/signup.jpeg)
+
+Registration message
+
+![Registrationmessage](media/photos/thanksforreg.jpeg)
+
+Activation Link Email
+
+![ActivationLinkEmail](media/photos/activatlink.jpeg)
+
+Activation Successful
+
+![ActivationSuccessful](media/photos/accountactivated.jpeg)
 
 Checkout
 
@@ -194,6 +206,14 @@ PayPall payment
 
 ![PayPall](media/photos/paypall.jpeg)
 
+Payment successful
+
+![Dashboard](media/photos/paymentsuccess.jpeg)
+
+Order recieved
+
+![Order recieved](media/photos/orderrecieved.jpeg)
+
 Dashboard
 
 ![Dashboard](media/photos/dashboard.jpeg)
@@ -202,9 +222,11 @@ Order detail
 
 ![Dashboard](media/photos/OrderDetail.jpeg)
 
-Payment successful
 
-![Dashboard](media/photos/paymentsuccess.jpeg)
+
+Review
+
+![Review](media/photos/review.jpeg)
 
 ### SEO
 Google keyword research was used to optimise web pages and content to increase ranking in search engines. Both short-tail & Long-tail keywords are used. The “People also ask” and “Related searches” was also used to identify keywords used.
@@ -342,6 +364,9 @@ In the same 'Code' dropdown, you can opt to open the code with GitHub Desktop an
 [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
 [Cloudinary documentation](https://cloudinary.com/documentation)
+
+[Stac Overflow](https://stackoverflow.com/)
+
 
 Privacy Policy generated from (https://www.privacypolicygenerator.info)[Privacy Policy Generator].
 
