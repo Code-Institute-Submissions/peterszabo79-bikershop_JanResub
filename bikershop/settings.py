@@ -58,9 +58,6 @@ ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
 
 # Application definition,
 
-
-
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
