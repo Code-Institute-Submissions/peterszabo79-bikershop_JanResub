@@ -51,18 +51,14 @@ DEBUG = False
 
 #DEBUG = True if os.environ.get('DEBUG') == 'True' else False
 
-#ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
+ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), 'localhost']
 #ALLOWED_HOSTS = ['bikershopbypsz.herokuapp.com', 'localhost']
 #ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), '*']
+#ALLOWED_HOSTS = [os.environ.get("HEROKU_HOSTNAME"), '*']
 
 # Application definition,
 
-CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io']
 
-
-
-USE_X_FORWARDED_HOST = True
 
 
 INSTALLED_APPS = [
@@ -117,12 +113,11 @@ SESSION_TIMEOUT_REDIRECT = 'accounts/login'
 
 ROOT_URLCONF = 'bikershop.urls'
 
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'accounts/')
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates', TEMPLATES_DIR],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
